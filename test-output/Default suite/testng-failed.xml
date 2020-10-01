@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="selenium_session1.Chrome_Test">
+      <class name="com.atmecs.phptravels.testscripts.PhpRegistration">
         <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="test1"/>
+          <include name="register"/>
+          <include name="lunchBrowser"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- selenium_session1.Chrome_Test -->
+      </class> <!-- com.atmecs.phptravels.testscripts.PhpRegistration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

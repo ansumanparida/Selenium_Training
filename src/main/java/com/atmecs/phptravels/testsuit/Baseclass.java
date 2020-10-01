@@ -21,7 +21,6 @@ public class Baseclass {
 	@BeforeMethod
 	public void lunchBrowser() {
 		properties = PropertyReader.readProperties(Constants.test_data_file);
-
 		weburl = properties.getProperty("url");
 		browser = properties.getProperty("Browser");
 
@@ -36,6 +35,6 @@ public class Baseclass {
 }
 	@AfterMethod
 	public void closeBrowser() {
-		driver.close();
+		driver.quit();
 	}
 }
